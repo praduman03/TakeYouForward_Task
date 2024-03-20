@@ -21,7 +21,7 @@ router.post("/", async (req, res) => {
   try {
     const { username, preferredLanguage, sourceCode, stdin } = req.body;
 
-    if (!username || !preferredLanguage || !sourceCode || !stdin) {
+    if (!username || !preferredLanguage || !sourceCode) {
       res.status(400).json({ message: "please fill all the details" });
     }
 
