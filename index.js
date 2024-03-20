@@ -7,14 +7,8 @@ import serverRoutes from "./serverRoute.route.js";
 import { sequelize } from "./db/model.db.js";
 
 const app = express();
-const allowedOrigins = [
-  "http://localhost:3000",
-  "https://take-you-forward-frontend.vercel.app/"
-];
-const corsOptions = {
-  origin: allowedOrigins
-};
-app.use(cors(corsOptions));
+
+app.use(cors());
 
 dotenv.config();
 
