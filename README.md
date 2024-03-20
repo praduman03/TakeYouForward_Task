@@ -7,5 +7,8 @@ Frontend Part: https://github.com/praduman03/TakeYouForwardFrontend
 
 ``
 npm install
+``
+
+``
 node start
 ``
